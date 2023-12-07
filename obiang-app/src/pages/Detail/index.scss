@@ -1,0 +1,83 @@
+.detail-container {
+    display: flex;
+    justify-content: center;
+    .detail-content {
+        width: 800px;
+        border: solid 2px rgb(45, 69, 148, 0.4);
+        border-radius: 5px;
+        padding: 20px;
+        .section-one-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img {
+                width: 250px;
+            }
+            h1 {
+                font-size: 40px;
+                margin: 5px 0px 0px 0px;
+            }
+        }
+        .section-two-content {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            .height-content { margin-right: 25px; }
+            .weight-content { margin-left: 25px; }
+            .height-content, .weight-content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .p-height, .p-weight {
+                    font-size: 18px;
+                    font-weight: 600;
+                    margin: 0;
+                }
+                .p-height-value, .p-weight-value {
+                    font-size: 18px;
+                    margin: 5px 0px 0px 0px;
+                }
+            }
+        }
+        .section-tree-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            h2 {
+                font-size: 30px;
+            }
+            .stats-container {
+                width: 100%;
+                .stats-content {
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                    span {
+                        flex: 4%;
+                        font-weight: 500;
+                        font-size: 18px;
+                        text-transform: capitalize;
+                        &:first-child {
+                            flex: 11%
+                        }
+                    }
+                    .stats-bar {
+                        width: 100%;
+                        margin: 10px;
+                        height: 20px;
+                        border-radius: 5px;
+                        &::-webkit-progress-bar {
+                            background-color: rgb(45, 69, 148);
+                            border-radius: 5px;
+                          }
+                        &::-webkit-progress-value {
+                            background-color: rgb(232, 198, 6);
+                            border-radius: 5px;
+                          
+                        }
+                    }
+                }
+            }
+        }
+    } 
+}
