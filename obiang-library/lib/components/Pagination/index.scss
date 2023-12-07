@@ -1,0 +1,120 @@
+@import "../globalStyles/variables.scss";
+
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px 0px;
+    .paginate-pages-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .pagination-numbers-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 0px 10px;
+        }
+        .prev-button img {
+          transform: rotate(180deg);
+        }
+        .prev-button,
+        .next-button {
+          cursor: pointer;
+          background-color: $yellow;
+          width: 40px;
+          height: 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          img { width: 35px;}
+          @media (max-width: 410px) {
+            &.first-page {
+              display: none;
+            }
+            &.last-page {
+              display: none;
+            }
+          }
+          &.first-page {
+            margin-right: 10px;
+            img { width: 20px;}
+          }
+          &.last-page {
+            margin-left: 10px;
+            img { width: 20px;}
+          }
+          &.disabled {
+            cursor: no-drop;
+            background-color: #ecf1f6;
+            &:hover {
+              background-color: #ecf1f6;
+            }
+          }
+          &:hover {
+            background-color: $lowYellow;
+          }
+        }        
+    
+        .pagination-number {
+          cursor: pointer;
+          font-style: normal;
+          font-weight: bolder;
+          font-size: 15px;
+          line-height: 16px;
+          color: $blue;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 24px;
+          height: 24px;
+          padding: 8px;
+          margin: 0 2px;
+          &.background-yellow { background: $yellow }
+          &.background-lowYellow { background: $lowYellow }
+          &.background-blue { background: $blue }
+          &.background-lowBlue { background: $lowBlue }
+          &:disabled {
+            cursor: no-drop;
+          }
+          &.active,
+          &:hover {
+            background-color: $blue;
+            color: $white;
+            &.active-backgound-yellow { background: $yellow;}
+            &.active-backgound-lowYellow { background: $lowYellow;}
+            &.active-backgound-blue { background: $blue;}
+            &.active-backgound-lowBlue { background: $lowBlue;}
+            &.color-yellow { color: $yellow;}
+            &.color-lowYellow { color: $lowYellow;}
+            &.color-blue { color: $blue;}
+            &.color-lowBlue { color: $lowBlue;}
+            &.color-white { color: $white;}
+            &.color-black { color: $black;}
+          }
+          @media (max-width: 600px) {
+            width: 20px;
+            height: 20px;
+          }
+        }
+        .prev-button,
+        .next-button {
+          display: flex;
+          align-items: center;
+          p {
+            cursor: pointer;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 16px;
+            color: #fff;
+            margin: 0;
+          }
+          @media (max-width: 600px) {
+            p {
+              display: none;
+            }
+          }
+        }
+      }
+}
