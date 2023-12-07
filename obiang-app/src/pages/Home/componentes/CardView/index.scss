@@ -1,0 +1,37 @@
+@import "../../../../globalStyles/variables.scss";
+
+.card-container {
+    .card-content{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        .card-pokemon-content {
+            cursor: pointer;
+            text-decoration: none;
+            .card-img-content {
+                background-color: $gray;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 5px;
+                padding: 10px;
+                height: 200px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .card-info-content {
+                padding: 15px;
+                span {
+                    display: block;
+                    color: $darkGray;
+                    margin-bottom: 15px;
+                }
+                h2 {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
