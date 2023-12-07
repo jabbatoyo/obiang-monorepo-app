@@ -2,8 +2,10 @@ import { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { getData } from "../api/endPoints/pokemons";
 import { GetParamsToSend, PokemonDto, PokemonsDto, ResponseData } from "../api";
+import { useView } from "../context/viewContext";
 
 function usePokemonData(limit: number, initData: boolean) {
+  const { typeView }: any = useView();
   const navigate = useNavigate();
   const location = useLocation();
   const [isLoading, setIsLoading] = useState(false);
@@ -26,7 +28,7 @@ function usePokemonData(limit: number, initData: boolean) {
     const paramsToSend: GetParamsToSend = {
       type: "all",
       offset,
-      limit: limit,
+      limit: typeView == "table" ? 10 : limit,
       requets: "",
     };
 
