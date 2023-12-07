@@ -9,6 +9,7 @@
     ],
     "scripts": {
         "co": "sui-mono commit",
+        "release": "sui-mono release",
         "lint-app": "cd obiang-app && npm run lint",
         "lint-library": "cd obiang-library && npm run lint",
         "test-app": "cd biang-app && npm run test",
