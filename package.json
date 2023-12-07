@@ -12,9 +12,9 @@
         "release": "sui-mono release",
         "lint-app": "cd obiang-app && npm run lint",
         "lint-library": "cd obiang-library && npm run lint",
-        "test-app": "cd biang-app && npm run test",
+        "test-app": "cd obiang-app && npm run test",
         "test-library": "cd obiang-library && npm run test",
-        "build-app": "cd biang-app && npm run build",
+        "build-app": "cd obiang-app && npm run build",
         "build-library": "cd obiang-library && npm run build"
     },
     "dependencies": {
