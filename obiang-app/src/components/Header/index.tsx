@@ -2,7 +2,7 @@
 import { useView } from "../../context/viewContext";
 
 //components
-import { Button } from "component-library";
+import { Button } from "obiang-library";
 
 //hooks
 import useNavigation from "../../hooks/useNavigation";

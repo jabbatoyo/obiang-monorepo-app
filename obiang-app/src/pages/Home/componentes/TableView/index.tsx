@@ -1,5 +1,5 @@
 //components
-import { Pagination, Table, Button } from "component-library";
+import { Pagination, Table, Button } from "obiang-library";
 
 //hooks
 import useNavigation from "../../../../hooks/useNavigation";

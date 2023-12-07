@@ -1,5 +1,5 @@
 //components
-import { Loading } from "component-library";
+import { Loading } from "obiang-library";
 import TableView from "./componentes/TableView";
 import CardView from "./componentes/CardView";
 
@@ -18,7 +18,7 @@ import { useState } from "react";
 
 export default function Home() {
   const { typeView }: any = useView();
-  const [limit, setLimit] = useState<number>(typeView == "table" ? 10 : 20);
+  const [limit, setLimit] = useState<number>(10);
   const { pokemons, isLoading, currentPage, totalPages, paginateGoTo } =
     usePokemonData(limit, true);
 

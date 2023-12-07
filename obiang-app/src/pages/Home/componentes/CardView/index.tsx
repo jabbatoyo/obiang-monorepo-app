@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 //components
-import { Button } from "component-library";
+import { Button } from "obiang-library";
 
 //images
 import defaultImg from "../../../../assets/default-img.png";

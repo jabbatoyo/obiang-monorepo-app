@@ -5,7 +5,7 @@ import { useParams } from "react-router-dom";
 import usePokemonData from "../../hooks/usePokemonData";
 
 //components
-import { Loading } from "component-library";
+import { Loading } from "obiang-library";
 
 //images
 import defaultImg from "../../assets/default-img.png";
