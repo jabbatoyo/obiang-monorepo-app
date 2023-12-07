@@ -1,0 +1,32 @@
+{
+  "name": "obiang-library",
+  "private": false,
+  "version": "1.0.0",
+  "type": "module",
+  "main": "./dist/obiang-library.umd.js",
+  "module": "./dist/obiang-library.es.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/obiang-library.es.js",
+      "require": "./dist/obiang-library.umd.js"
+    },
+    "./dist/style.css": "./dist/style.css"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc --p ./tsconfig-build.json && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "test": "vitest"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
