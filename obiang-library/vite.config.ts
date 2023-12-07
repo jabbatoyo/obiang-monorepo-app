@@ -18,9 +18,9 @@ export default defineConfig({
     copyPublicDir: false,
     lib: {
       entry: resolve(__dirname, "lib/index.ts"),
-      name: "componentLibrary",
+      name: "obiangLibrary",
       formats: ["es", "umd"],
-      fileName: (format) => `component-library.${format}.js`,
+      fileName: (format) => `obiang-library.${format}.js`,
     },
     rollupOptions: {
       external: [...Object.keys(packageJson.peerDependencies)],
