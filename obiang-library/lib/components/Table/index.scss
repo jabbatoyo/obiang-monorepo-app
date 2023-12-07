@@ -1,0 +1,47 @@
+@import "../globalStyles/variables.scss";
+
+.home-container {
+    padding: 20px;
+    width: calc(100% - 40px);
+    background-color: #fff;
+    overflow-x: auto;
+    table {
+    border: solid 1px $lowBlue;
+    border-radius: 5px;
+    color: $blue;
+    font-size: 14px;
+    table-layout: fixed;
+    text-align:  center;
+    &.width-default {
+        width: 500px;
+    }
+    &.width-full {
+        width: 100%;
+    }
+    &.width-mid {
+        width: 400px;
+    }
+    thead {
+        background: $yellow;
+        th {
+            padding: 10px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+    }
+    tbody {
+        tr {
+            border: solid 1px $lowBlue;
+            &:hover {
+                background: $lowYellow;
+            }
+            td {
+                border: solid 1px $lowBlue;
+                img {
+                    width: 50px;
+                }
+            }
+        }
+    }
+}
+}
