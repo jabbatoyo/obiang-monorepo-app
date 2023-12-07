@@ -8,6 +8,7 @@
         "obiang-library"
     ],
     "scripts": {
+        "co": "sui-mono commit",
         "lint-app": "cd obiang-app && npm run lint",
         "lint-library": "cd obiang-library && npm run lint",
         "test-app": "cd biang-app && npm run test",
@@ -16,6 +17,7 @@
         "build-library": "cd obiang-library && npm run build"
     },
     "dependencies": {
+        "@s-ui/mono": "^2.42.0",
         "react": "^18.2.0",
         "react-dom": "^18.2.0"
     },
