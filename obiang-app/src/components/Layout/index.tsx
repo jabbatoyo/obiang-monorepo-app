@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
 
 //components
-import Header from "../Header";
+import { Header } from "../index";
 
 //hooks
 import useNavigation from "../../hooks/useNavigation";
